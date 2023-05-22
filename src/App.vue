@@ -19,8 +19,9 @@ async function prefetch(){
 </script>
 
 <template>
-  <div class="container min-w-[300px] min-h-[300px] text-[#008080] bold bg-[#ecfffd] rounded-xl px-6 py-8 flex flex-col justify-center shadow-xl shadow-slate-950 mx-1">
-    <h2 v-if = "isLoading" class="font-sans ">Loading To-Do Lists</h2>
+  <h1 class="text-center mb-10 text-5xl font-serif font-light">Todo'sty</h1>
+  <div class="container min-w-[318px] min-h-[440px] text-[#008080] bold bg-[#ecfffd] rounded-xl px-6 py-8 flex flex-col justify-center shadow-2xl shadow-slate-700 mx-1">
+    <h2 v-if = "isLoading" class="font-sans text-3xl">Loading To-Do Lists</h2>
     <template v-if = "!isLoading">
       <router-view />
     </template>
